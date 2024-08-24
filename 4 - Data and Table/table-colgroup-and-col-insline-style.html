@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table with Column Grouping</title>
+    <style>
+        table { border-collapse: collapse; width: 40%; margin: 20px auto; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f4f4f4; }
+        col:nth-child(1) { background-color: #f00; }
+        col:nth-child(2) { background-color: blue; }
+        col:nth-child(3) { background-color: green; }
+        td {
+          color:#fff;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col style="width: 30%;">
+            <col style="width: 20%;">
+            <col style="width: 50%;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Occupation</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alice</td>
+                <td>29</td>
+                <td>Graphic Designer</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>35</td>
+                <td>Software Engineer</td>
+            </tr>
+            <tr>
+                <td>Charlie</td>
+                <td>42</td>
+                <td>Project Manager</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
