@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Native Language</h1>
+    <form action="" >
+        <label for="appt">Choose a time for your meeting:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+        <input type="date" required />
+        <input type="time" id="appt" name="appt" min="09:00" max="18:00" step="120" required />
+    <input type="date">        
+        <small>Office hours are 9am to 6pm</small>
+    </form>    
+</body>
+</html>
